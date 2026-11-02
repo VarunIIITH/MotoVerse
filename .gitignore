@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+data/
+outputs/
+third_party/
+*.pt
+*.pth
+*.pyth
+*.pkl
+.DS_Store
+*.egg-info/

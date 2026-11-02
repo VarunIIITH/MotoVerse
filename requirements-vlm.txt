@@ -1,0 +1,21 @@
+# Qwen3-VL-2B/4B, Cosmos-Reason2-8B, UniDriveVLA, Alpamayo-1.5-10B and LoRA (Python 3.11)
+torch==2.5.1
+torchvision==0.20.1
+transformers==5.17.0
+accelerate==1.15.0
+peft==0.21.2
+huggingface_hub==1.33.0
+safetensors==0.8.0
+tokenizers==0.23.3
+qwen-vl-utils==0.0.14
+flash_attn==2.8.3
+numpy==2.4.6
+pandas==3.1.0
+pyyaml==6.0.3
+scikit-learn==1.9.1
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+av==18.1.0
+einops==0.8.2
+timm==1.0.30
+sentencepiece==0.2.2

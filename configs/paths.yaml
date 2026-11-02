@@ -1,0 +1,6 @@
+data_root: data/MotoVerse
+work: outputs
+results: outputs/results
+pretrained: outputs/pretrained
+slowfast_repo: third_party/SlowFast
+bitrap_repo: third_party/bidireaction-trajectory-prediction

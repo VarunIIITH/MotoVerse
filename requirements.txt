@@ -1,0 +1,22 @@
+# ERMA backbones and TATP models (Python 3.11)
+torch==2.5.1
+torchvision==0.20.1
+numpy==2.4.6
+pandas==3.1.0
+pyyaml==6.0.3
+scikit-learn==1.9.1
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+
+# PySlowFast
+av==18.1.0
+fvcore==0.1.5.post20221221
+iopath==0.1.10
+simplejson==4.2.0
+psutil==7.2.2
+tensorboard==2.21.0
+matplotlib==3.11.2
+pytorchvideo @ git+https://github.com/facebookresearch/pytorchvideo.git
+
+# BiTraP
+yacs==0.1.8

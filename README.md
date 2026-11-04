@@ -2,6 +2,8 @@
 
 Code release accompanying the WACV 2027 paper *MotoVerse: A Benchmark for Predictive Perception of Motorized Two-Wheelers in Dense Unstructured Traffic*.
 
+- Dataset: https://huggingface.co/datasets/varunpaturkar/MotoVerse
+
 ## Abstract
 
 Motorized Two-Wheelers (MTWs) dominate personal transport across much of the Global South, yet remain largely overlooked in predictive perception research for autonomous driving and ADAS. We introduce MotoVerse, a benchmark for predictive perception from an MTW's ego-centric perspective. MotoVerse comprises 949 maneuver clips collected in dense, unstructured traffic and trajectory annotations for over 31,000 surrounding road agents, including over 16,000 MTWs, enabling two complementary tasks: Ego-Rider Maneuver Anticipation (ERMA) and Traffic Agent Trajectory Prediction (TATP). Each clip is further annotated with an MTW-specific challenge taxonomy comprising dynamic ego-motion, weak traffic structure and contextual occlusion, enabling challenge-aware evaluation. We benchmark established conventional prediction models, general-purpose Vision-Language Models (VLMs), driving-specific VLMs and vision-language-action models. Our experiments reveal three key insights: (i) video backbones reach most of their full-observation accuracy from the first fifth of a maneuver, whereas zero-shot VLMs need most of the maneuver to be observed; (ii) zero-shot VLMs, whether general-purpose or driving-specific, largely remain close to simple baselines on both tasks; a preliminary LoRA study shows that adaptation lifts anticipation sharply but leaves trajectory prediction behind conventional models; and (iii) the rider's own motion drives forecasting difficulty: for every model, including a static baseline, errors are highest during left turns and rise under dynamic ego-motion. We believe MotoVerse will serve as a challenging benchmark for safer and more robust predictive AI for intelligent two-wheelers.
@@ -23,7 +25,11 @@ The VLMs need their own environments: `requirements-vlm.txt` (Qwen3-VL, Cosmos-R
 
 ## Data
 
-Place the dataset under `data/MotoVerse` (paths are set in `configs/paths.yaml`):
+Download the dataset from [Hugging Face](https://huggingface.co/datasets/varunpaturkar/MotoVerse) into `data/MotoVerse` (paths are set in `configs/paths.yaml`):
+
+```bash
+hf download varunpaturkar/MotoVerse --repo-type dataset --local-dir data/MotoVerse
+```
 
 ```
 data/MotoVerse/
